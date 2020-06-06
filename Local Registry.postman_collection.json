@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "16690fb1-480a-4280-8768-f93e3d867724",
+		"name": "Local Registry",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Repos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://trading.home:32000/v2/_catalog",
+					"protocol": "http",
+					"host": [
+						"trading",
+						"home"
+					],
+					"port": "32000",
+					"path": [
+						"v2",
+						"_catalog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List of tags",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.147:32000/v2/wyndham-trading/trading-strategy-application/tags/list",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"147"
+					],
+					"port": "32000",
+					"path": [
+						"v2",
+						"wyndham-trading",
+						"trading-strategy-application",
+						"tags",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Manifest",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.docker.distribution.manifest.v2+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://trading.home:32000/v2/wyndham-trading/trading-strategy-application/manifests/latest",
+					"protocol": "http",
+					"host": [
+						"trading",
+						"home"
+					],
+					"port": "32000",
+					"path": [
+						"v2",
+						"wyndham-trading",
+						"trading-strategy-application",
+						"manifests",
+						"latest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Image",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://trading.home:32000/v2/wyndham-trading/trading-strategy-application/manifests/latest",
+					"protocol": "http",
+					"host": [
+						"trading",
+						"home"
+					],
+					"port": "32000",
+					"path": [
+						"v2",
+						"wyndham-trading",
+						"trading-strategy-application",
+						"manifests",
+						"latest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Base",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://trading.home:32000/v2/",
+					"protocol": "http",
+					"host": [
+						"trading",
+						"home"
+					],
+					"port": "32000",
+					"path": [
+						"v2",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

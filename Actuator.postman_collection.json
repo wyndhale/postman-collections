@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "1334cecd-bc7a-4b3a-bb6e-662b4c942f2b",
+		"name": "Actuator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://trading.home:30500/actuator/health",
+					"protocol": "http",
+					"host": [
+						"trading",
+						"home"
+					],
+					"port": "30500",
+					"path": [
+						"actuator",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "health - local",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/actuator/metrics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"actuator",
+						"metrics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "beans",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://trading.home:30500/actuator/beans",
+					"protocol": "http",
+					"host": [
+						"trading",
+						"home"
+					],
+					"port": "30500",
+					"path": [
+						"actuator",
+						"beans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shutdown",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://trading.home:30500/actuator/shutdown",
+					"protocol": "http",
+					"host": [
+						"trading",
+						"home"
+					],
+					"port": "30500",
+					"path": [
+						"actuator",
+						"shutdown"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://trading.home:30500/actuator/info",
+					"protocol": "http",
+					"host": [
+						"trading",
+						"home"
+					],
+					"port": "30500",
+					"path": [
+						"actuator",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "metrics",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://trading.home:30500/actuator/metrics",
+					"protocol": "http",
+					"host": [
+						"trading",
+						"home"
+					],
+					"port": "30500",
+					"path": [
+						"actuator",
+						"metrics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "server requests",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://trading.home:30500/actuator/metrics/http.server.requests",
+					"protocol": "http",
+					"host": [
+						"trading",
+						"home"
+					],
+					"port": "30500",
+					"path": [
+						"actuator",
+						"metrics",
+						"http.server.requests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "threaddump",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://trading.home:30500/actuator/threaddump",
+					"protocol": "http",
+					"host": [
+						"trading",
+						"home"
+					],
+					"port": "30500",
+					"path": [
+						"actuator",
+						"threaddump"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

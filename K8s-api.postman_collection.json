@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "c3ce8b5e-044e-422d-8ac0-ed80211d702f",
+		"name": "K8s-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List Pods",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImlQVDRsa2lqcUZIM3pacmlPNGV6YzRrU2piU2NCRzdTX2hFYjhMSmp0aFkifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJkZWZhdWx0LXRva2VuLWhkOHM5Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImRlZmF1bHQiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJjMDM2NDNiMi04NTk4LTRlOWUtYTRiZC0yNzBiZmIyZmFkZjYiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06ZGVmYXVsdCJ9.oToqheiKXmxNtdkZrw1Rztvh4tPalaZuvFOd7LmrbF__kebF1Dset_4PqLekCbKWW5dgfTfEpqUw8hStgaObFcQICUr92OiiUXyH3-HO-yPP02yGHavlia4NL7jBS0EPo6599_nYn56ksPzV9jaHL_sFaQ0bKu9_LlbjVgDu0Nu9tlgY8rUSuc0_tamvbStZEujN65RLV-XdjAFXdwAiyiGJdHY0bC3iiHEU_cDNyxD4TvjkwzFkWIP8Vs1PK-DiIAaLStYJiI6iHf8sdE1jJF7E2Qv_4RGSrqHI48NC0Oo_A6LjuIGTK56By8Lr26Fvgdk7MWoOBxUmd1OmTnUDYg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://trading.home:16443/api/v1/namespaces",
+					"protocol": "https",
+					"host": [
+						"trading",
+						"home"
+					],
+					"port": "16443",
+					"path": [
+						"api",
+						"v1",
+						"namespaces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get API",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImlQVDRsa2lqcUZIM3pacmlPNGV6YzRrU2piU2NCRzdTX2hFYjhMSmp0aFkifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJkZWZhdWx0LXRva2VuLWhkOHM5Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImRlZmF1bHQiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJjMDM2NDNiMi04NTk4LTRlOWUtYTRiZC0yNzBiZmIyZmFkZjYiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06ZGVmYXVsdCJ9.oToqheiKXmxNtdkZrw1Rztvh4tPalaZuvFOd7LmrbF__kebF1Dset_4PqLekCbKWW5dgfTfEpqUw8hStgaObFcQICUr92OiiUXyH3-HO-yPP02yGHavlia4NL7jBS0EPo6599_nYn56ksPzV9jaHL_sFaQ0bKu9_LlbjVgDu0Nu9tlgY8rUSuc0_tamvbStZEujN65RLV-XdjAFXdwAiyiGJdHY0bC3iiHEU_cDNyxD4TvjkwzFkWIP8Vs1PK-DiIAaLStYJiI6iHf8sdE1jJF7E2Qv_4RGSrqHI48NC0Oo_A6LjuIGTK56By8Lr26Fvgdk7MWoOBxUmd1OmTnUDYg"
+					}
+				],
+				"url": {
+					"raw": "https://trading.home:16443/openapi/v2 ",
+					"protocol": "https",
+					"host": [
+						"trading",
+						"home"
+					],
+					"port": "16443",
+					"path": [
+						"openapi",
+						"v2 "
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List namespaces",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImlQVDRsa2lqcUZIM3pacmlPNGV6YzRrU2piU2NCRzdTX2hFYjhMSmp0aFkifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJkZWZhdWx0LXRva2VuLWhkOHM5Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImRlZmF1bHQiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJjMDM2NDNiMi04NTk4LTRlOWUtYTRiZC0yNzBiZmIyZmFkZjYiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06ZGVmYXVsdCJ9.oToqheiKXmxNtdkZrw1Rztvh4tPalaZuvFOd7LmrbF__kebF1Dset_4PqLekCbKWW5dgfTfEpqUw8hStgaObFcQICUr92OiiUXyH3-HO-yPP02yGHavlia4NL7jBS0EPo6599_nYn56ksPzV9jaHL_sFaQ0bKu9_LlbjVgDu0Nu9tlgY8rUSuc0_tamvbStZEujN65RLV-XdjAFXdwAiyiGJdHY0bC3iiHEU_cDNyxD4TvjkwzFkWIP8Vs1PK-DiIAaLStYJiI6iHf8sdE1jJF7E2Qv_4RGSrqHI48NC0Oo_A6LjuIGTK56By8Lr26Fvgdk7MWoOBxUmd1OmTnUDYg"
+					}
+				],
+				"url": {
+					"raw": "https://trading.home:16443/api/v1/namespace/default/pods",
+					"protocol": "https",
+					"host": [
+						"trading",
+						"home"
+					],
+					"port": "16443",
+					"path": [
+						"api",
+						"v1",
+						"namespace",
+						"default",
+						"pods"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

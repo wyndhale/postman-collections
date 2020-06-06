@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "4ccb5013-e952-4b5f-9f16-ce6c0e6aad43",
+		"name": "Alpaca",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Orders",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "APCA-API-KEY-ID",
+						"value": "PKP05WO39F7KW50792N1",
+						"type": "text"
+					},
+					{
+						"key": "APCA-API-SECRET-KEY",
+						"value": "YQFgy2USa3XcG3GMqMVWjZCJL0iDnZQ/8vHAYBbo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://paper-api.alpaca.markets/v2/orders?status=all",
+					"protocol": "https",
+					"host": [
+						"paper-api",
+						"alpaca",
+						"markets"
+					],
+					"path": [
+						"v2",
+						"orders"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "all"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "APCA-API-KEY-ID",
+						"type": "text",
+						"value": "PKTB49YOQDJFJXD6EMVV"
+					},
+					{
+						"key": "APCA-API-SECRET-KEY",
+						"type": "text",
+						"value": "hZgDD3aPCa7HfYvxPzuhlYyDZ9zzb974N7KoOloR"
+					}
+				],
+				"url": {
+					"raw": "https://paper-api.alpaca.markets/v2/account",
+					"protocol": "https",
+					"host": [
+						"paper-api",
+						"alpaca",
+						"markets"
+					],
+					"path": [
+						"v2",
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Orders By ClientOrderId",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "APCA-API-KEY-ID",
+						"value": "PKZT4GRNIUHWQ2OHEAZT",
+						"type": "text"
+					},
+					{
+						"key": "APCA-API-SECRET-KEY",
+						"value": "IS/zOc3QSotE6DC3ZTH2aaaicGnHxAGSAbBDBdV2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://paper-api.alpaca.markets/v2/orders:by_client_order_id?client_order_id=1003-6f0363a3-1050-47a2-9790-748409de1361",
+					"protocol": "https",
+					"host": [
+						"paper-api",
+						"alpaca",
+						"markets"
+					],
+					"path": [
+						"v2",
+						"orders:by_client_order_id"
+					],
+					"query": [
+						{
+							"key": "client_order_id",
+							"value": "1003-6f0363a3-1050-47a2-9790-748409de1361"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
